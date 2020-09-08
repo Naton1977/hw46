@@ -1,0 +1,342 @@
+p {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Arial, sans-serif, Serif;
+}
+
+.radius {
+    border-radius: 3px;
+}
+
+.borderstyle {
+    border: 1px solid gainsboro;
+}
+
+.size {
+    height: 30px;
+}
+
+.paddingleft {
+    padding-left: 20px;
+}
+.margtop{
+    margin-top: 30px;
+}
+input:required:invalid::-webkit-input-placeholder {
+    color: rgb(150,40,65);
+}
+input:required:invalid + label::after{
+    border-color:rgb(150,40,65) ;
+    opacity: 1;
+}
+input:required:invalid{
+    border-color:rgb(150,40,65) ;
+}
+input:required:valid::-webkit-input-placeholder {
+    color: rgb(65,173,73);
+}
+input:required:valid + label::before{
+    border-color:rgb(65,173,73) ;
+    opacity: 1;
+}
+input:required:valid{
+    color:rgb(65,173,73);
+    border-color:rgb(65,173,73) ;
+}
+
+
+.checkbox1 {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    margin: 10px 0 0 20px;
+}
+
+.checkbox1 + label {
+    position: relative;
+    padding: 0 0 0 60px;
+    cursor: pointer;
+}
+
+.checkbox1 + label:before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: 0;
+    width: 44px;
+    height: 18px;
+    border-radius: 3px;
+    background: white;
+    border: 1px solid rgb(65, 173, 73);
+    transition: .2s;
+}
+
+.checkbox1 + label:after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    background: rgb(65, 173, 73);
+    transition: .2s;
+}
+
+.checkbox1:checked + label:before {
+    border: 1px solid rgb(228, 64, 97);
+}
+
+.checkbox1:checked + label:after {
+    background-color: rgb(228, 64, 97);
+    left: 26px;
+}
+
+.checkbox2 {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    margin: 10px 0 0 20px;
+}
+
+.checkbox2 + label {
+    margin-left: 20px;
+    position: relative;
+    padding: 0 0 0 60px;
+    cursor: pointer;
+}
+
+.checkbox2 + label:before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: 0;
+    width: 44px;
+    height: 18px;
+    border-radius: 3px;
+    background: white;
+    border: 1px solid rgb(228, 64, 97);
+    transition: .2s;
+}
+
+.checkbox2 + label:after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: 26px;
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    background: rgb(228, 64, 97);
+    transition: .2s;
+}
+
+.checkbox2:checked + label:before {
+    border: 1px solid rgb(65, 173, 73);
+}
+
+.checkbox2:checked + label:after {
+    background-color: rgb(65, 173, 73);
+    left: 2px;
+}
+
+
+.radio {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    margin: 10px 0 0 7px;
+}
+
+.radio + label {
+    position: relative;
+    padding: 0 0 0 35px;
+    cursor: pointer;
+}
+
+.radio + label:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    border: 1px solid rgb(65, 173, 73);
+    border-radius: 50%;
+    background: white;
+}
+
+.radio + label:after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 12px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: rgb(65, 173, 73);
+    opacity: 0;
+    transition: .2s;
+}
+
+.radio:checked + label:after {
+    opacity: 1;
+}
+
+.lablebefor:before {
+    margin-left: 10px;
+}
+
+.button1 {
+    height: 25px;
+    width: 60px;
+    border: 0;
+    background-color: rgb(65, 173, 73);
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.button2 {
+    margin-left: 10px;
+    height: 25px;
+    width: 60px;
+    border: 0;
+    background-color: rgb(44, 119, 49);
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.button3 {
+    margin-left: 10px;
+    height: 25px;
+    width: 60px;
+    border: 0;
+    background-color: rgb(228, 64, 97);
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.button4 {
+    margin-left: 10px;
+    height: 25px;
+    width: 60px;
+    border: 0;
+    background-color: rgb(151, 41, 63);
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.button5 {
+    margin-left: 10px;
+    height: 25px;
+    width: 70px;
+    border: 0;
+    background-color: rgb(128, 128, 128);
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.button6 {
+    margin-left: 10px;
+    height: 25px;
+    width: 25px;
+    border: 0;
+    background-color: rgb(65, 173, 73);
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+}
+
+.button7 {
+    margin-left: 10px;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    border: 0;
+    background-color: rgb(228, 64, 97);
+    color: white;
+    cursor: pointer;
+}
+
+.textarea {
+    padding-left: 10px;
+    padding-top: 10px;
+    color: rgb(208, 199, 199);
+}
+
+.divback {
+    background: rgb(245, 245, 245);
+}
+
+.divsize1 {
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 700px;
+    height: 600px;
+}
+
+.divsize2 {
+    padding-top: 30px;
+    margin-left: 30px;
+}
+
+.inputvalid1 + label::before {
+    opacity: 0;
+    content: '';
+    background: url("../icons/valid.png") no-repeat center;
+    position: absolute;
+    top: 115px;
+    left: 420px;
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+    background-size: contain;
+    transition: .2s;
+}
+
+.inputinvalid1 + label::after {
+    opacity: 0;
+    content: '';
+    background: url("../icons/invalid.png") no-repeat center;
+    position: absolute;
+    top: 115px;
+    left: 420px;
+    width: 15px;
+    height: 17px;
+    border-radius: 3px;
+    background-size: contain;
+    transition: .2s;
+}
+
+.inputvalid2 + label::before {
+    opacity: 0;
+    content: '';
+    background: url("../icons/valid.png") no-repeat center;
+    position: absolute;
+    top: 115px;
+    left: 620px;
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+    background-size: contain;
+    transition: .2s;
+}
+
+.inputinvalid2 + label::after {
+    opacity: 0;
+    content: '';
+    background: url("../icons/invalid.png") no-repeat center;
+    position: absolute;
+    top: 115px;
+    left: 620px;
+    width: 15px;
+    height: 17px;
+    border-radius: 3px;
+    background-size: contain;
+    transition: .2s;
+}
